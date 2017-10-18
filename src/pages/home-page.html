@@ -19,13 +19,14 @@
 <style type="text/css">
 
   .hero {
-    max-width: 1080px;
+    max-width: 1440px;
     margin : 0 auto;
     padding: 30px;
-
+    height: 1500px;
     font-size: 15px;
     line-height: 1.87;
     color: #424242;
+
   }
 
   .hero .hero__title--sm {
@@ -50,6 +51,15 @@
     line-height: 20px;
     color: #424242;
   }
+
+
+  .hero__logo__img {
+  position:absolute;top:80px;width:57.222222%;
+    transform: translateX(-50%);
+    max-width: 877px;
+    left: 50%;
+        margin-top: 100px;
+  }
   .button {
     background: #1CE8B5;
     border-radius: 2px;
@@ -70,9 +80,10 @@
     margin-bottom: 0;
   }
 
-   @media (min-width: 601px){
+   @media (min-width: 770px){
     .hero {
       padding: 120px 60px;
+      padding-bottom: 0px;
     }
 
     .hero .hero__location {
@@ -84,6 +95,24 @@
      .hero .hero__title{
         max-width: 450px;
     }
+
+  .key-visual .key-info {position:absolute;width:512px;right:5.208333%;top:0.569444%;margin-top:500px;padding:49px 50px 36px;text-align:center;border:5px solid #0068ff;background:#ffffff}
+      .key-visual .key-info h3 {margin-bottom:5px;}
+      .key-visual .key-info h3 img {width:100%}
+      .key-visual .lnk {margin-top:24px;font-size:24px;font-weight:bold;padding:15px 107px 14px;}
+      /*.key-visual::after {content:'';display:block;position:absolute;left:0;bottom:0;width:67.152777%;padding-top:31.944444%;background:url('../../images/logos/group@3x.png') 0 0 no-repeat;background-size:cover;}*/
+       .key-visual {position:relative;}
+      .key-visual .web-logo {position:absolute;left:21.388888%;top:19.236111%;width:57.222222%;padding-top:17.569444%;background:url('../../images/logos/devfest-weblogo-4-x@3x.png') 0 0 no-repeat;background-size:cover;}
+     .festivalimg {
+      content: url('../../images/logos/festival@3x.png') !important;
+     }
+     .key-visual .key-churros {
+          position: absolute;
+          margin-top: 900px;
+          width: 70%;
+          content: url(../../images/logos/group.png);
+          padding: 2px;
+        }
   }
 
 
@@ -101,17 +130,23 @@
             <div class="hero__main ">
               <div class="hero__logo hero__logo--spacer">
                 <div class="hero__logo hero__logo--mobile">
-                  <svg width="188" height="133" viewBox="0 0 188 133" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#5471F9" d="M0 111.963h47.71V17.9H0z"></path><path fill="#31E8B7" d="M82.85 0L53.308 131.147l7.42 1.642L90.273 1.642z"></path><path d="M136.648 14c-28.3 0-51.242 22.745-51.242 50.8 0 28.057 22.942 50.8 51.242 50.8 28.301 0 51.242-22.743 51.242-50.8 0-28.055-22.94-50.8-51.242-50.8" fill="#5471F9"></path></g></svg>   
+                  <img class="hero__logo__img" src="../../images/logos/devfest-weblogo-4-x@3x.png">   
                 </div>
               </div>
-              <div class="hero__title hero__title--sm" aria-level="1" role="heading">
-                Google I/O!! 서울에서도 합니다!! Google I/O 2017 Extended in Seoul!!
-              </div>
-              <div class="hero__date">
-                JUL 2, 2017
-              </div>
-              <div class="hero__location">
-                세종대학교 광개토관 컨벤션홀
+              
+              <div class="key-visual">
+                <!-- <h2 class="web-logo"><span class="blind">DEVFEST 2017 서울</span></h2> -->
+                <div class="key-info">
+                  <h3><img class="festivalimg"></h3>
+                    <p style="color:#3d3d3d" >Android, Firebase, Google Cloud Platform, TensorFlow, Web 등<br>
+        최신 Google 개발자 기술 콘텐츠를 만나보세요!<br>
+        서로 지식을 교환하고, 아이디어를 공유하고, 기술에 대한 열정을 표출하는<br>
+        개발자들의 축제에 여러분을 초대합니다.</p>
+                    <a href="#" class="lnk lnk--button lnk--button__filled">등록하기</a>
+                </div>
+                <div class="key-churros">
+                  <img>
+                </div>
               </div>
             </div>
           </div>
