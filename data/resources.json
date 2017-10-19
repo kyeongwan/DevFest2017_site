@@ -23,7 +23,7 @@
   "clickToViewPhotos": "Click here to view more photos",
   "partners": "Partners",
   "becomePartner": "Become a partner",
-  "featuredVideosTitle": "#IO Extended '16 Featured Sessions",
+  "featuredVideosTitle": "#DevFest 2017 Featured Sessions",
   "featuredVideosViewAll": "View all videos",
   "featuredPeopleTitle": "Speakers",
   "featuredPeopleViewAll": "View all speakers",
@@ -118,7 +118,7 @@
       }
     ]
   },
-  "teamPageTitle": "I/O Extended in Seoul 17을 위해 고생하신 분",
+  "teamPageTitle": "DevFest 2017 Seoul 을 위해 고생하신 분",
   "teamPageText": "짝짝짝, 일헤라 GDG 노예들이여~~ 음 뭐라고 써야 하지",
   "statistics": [
     {
@@ -139,7 +139,7 @@
     }
   ],
   "callToAction": {
-    "videoTitle": "GDG DevFest 2015",
+    "videoTitle": "GDG DevFest 2017",
     "videoId": "DfMnJAzOFng"
   }
 }

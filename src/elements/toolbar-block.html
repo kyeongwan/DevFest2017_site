@@ -40,8 +40,8 @@
       }
 
       .logo {
-        height: 82px;
-        width: 50px;
+        height: 24px;
+        width: 120px;
       }
 
       iron-image {
@@ -49,7 +49,7 @@
       }
 
       paper-tabs a {
-        color: var(--header-color);
+        color: #ffffff;
         transition: color .7s
       }
 
@@ -71,9 +71,13 @@
       }
 
       .action-button {
-        color: var(--header-background);
-        background: #5471f9;
+        color: #ffffff;
+        /*background: #222222;*/
+        border-radius: 100px;
+        font-weight: bold;
         font-size: 13px;
+        border: 1px solid #ffffff;
+        min-width: 100px;
       }
 
       .auth-menu[phoneSize] {
@@ -98,7 +102,7 @@
         <a href="/" hidden$="{{hideLogo}}" fade>
           <iron-image
             class="logo"
-            src="/images/io17_logo.svg"
+            src="/images/logos/logo.svg"
             sizing="cover"
             alt="{$ title $}"
           ></iron-image>
@@ -145,8 +149,8 @@
         </paper-menu-button>
 
         <div class="action-button-wrapper" hidden$="[[app.isPhoneSize]]" layout horizontal center-center>
-          <a href="https://www.meetup.com/ko-KR/GDG-Seoul/events/240286299/" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
-            <paper-button class="action-button">{$ buyTicket $}</paper-button>
+          <a href="https://festa.io/ticketinfo" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
+            <paper-button class="action-button">  등록하기  </paper-button>
           </a>
         </div>
       </div>

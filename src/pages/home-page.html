@@ -17,7 +17,84 @@
   <template>
 
 <style type="text/css">
-
+* {
+  box-sizing:border-box;
+}
+img {
+  vertical-align: top;
+}
+.hero::after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.hero .hero__logo {
+  width:80%;
+  margin:15% auto 0;
+}
+.hero .hero__logo__img {
+  width:100%;
+}
+.key-info {
+  float:right;
+  margin-top:25%;
+  margin-right:5%;
+  max-width:600px;
+  min-width:300px;
+  padding:49px 50px 36px;
+  border:5px solid #0068ff;
+  background:#ffffff;
+  text-align:center;
+}
+.key-visual .key-info h3 {
+  width:65%;
+  margin:0 auto 5px;
+}
+.key-visual .key-info h3 img {
+  width:100%
+}
+.key-visual .lnk {
+  clear:both;
+  margin-top:24px;
+  font-size:24px;
+  font-weight:bold;
+  padding:15px 107px 14px;
+  text-decoration: none;
+}
+.lnk--button {
+  display:inline-block;
+  padding:5px 30px 4px;
+  border:2px solid #ffffff;
+  border-radius:100px;
+  font-weight:bold;
+  letter-spacing:-0.6px
+}
+.lnk--button__filled {
+  background:#0068ff;
+  color:#ffffff;
+}
+.key-churros {
+  width:80%;
+}
+.key-churros img {
+  width:100%;
+}
+@media (max-width:1240px) {
+  .key-info {
+    float:none;
+    margin:25% auto;
+    padding:49px 25px 36px;
+  }
+  .key-churros {
+    margin:auto;
+  }
+}
+@media (max-width:320px) {
+  .key-info {
+    padding:49px 0 36px;
+  }
+}
+/*
   .hero {
     max-width: 1440px;
     margin : 0 auto;
@@ -100,17 +177,14 @@
       .key-visual .key-info h3 {margin-bottom:5px;}
       .key-visual .key-info h3 img {width:100%}
       .key-visual .lnk {margin-top:24px;font-size:24px;font-weight:bold;padding:15px 107px 14px;}
-      /*.key-visual::after {content:'';display:block;position:absolute;left:0;bottom:0;width:67.152777%;padding-top:31.944444%;background:url('../../images/logos/group@3x.png') 0 0 no-repeat;background-size:cover;}*/
+      
        .key-visual {position:relative;}
       .key-visual .web-logo {position:absolute;left:21.388888%;top:19.236111%;width:57.222222%;padding-top:17.569444%;background:url('../../images/logos/devfest-weblogo-4-x@3x.png') 0 0 no-repeat;background-size:cover;}
-     .festivalimg {
-      content: url('../../images/logos/festival@3x.png') !important;
-     }
      .key-visual .key-churros {
           position: absolute;
           margin-top: 900px;
           width: 70%;
-          content: url(../../images/logos/group.png);
+          content: url();
           padding: 2px;
         }
   }
@@ -119,6 +193,7 @@
     font-size: 15px;
     line-height: 1.87;
   }
+  */
 
 
 </style>
@@ -137,21 +212,18 @@
               <div class="key-visual">
                 <!-- <h2 class="web-logo"><span class="blind">DEVFEST 2017 서울</span></h2> -->
                 <div class="key-info">
-                  <h3><img class="festivalimg"></h3>
+                  <h3><img src="../../images/logos/festival@3x.png" alt="개발자들의 신나는 페스티벌"></h3>
                     <p style="color:#3d3d3d" >Android, Firebase, Google Cloud Platform, TensorFlow, Web 등<br>
         최신 Google 개발자 기술 콘텐츠를 만나보세요!<br>
         서로 지식을 교환하고, 아이디어를 공유하고, 기술에 대한 열정을 표출하는<br>
         개발자들의 축제에 여러분을 초대합니다.</p>
-                    <a href="#" class="lnk lnk--button lnk--button__filled">등록하기</a>
+                    <a href="https://festa.io/ticketinfo" class="lnk lnk--button lnk--button__filled">등록하기</a>
                 </div>
                 <div class="key-churros">
-                  <img>
+                  <img src="../../images/logos/group.png" alt="">
                 </div>
               </div>
             </div>
-          </div>
-          <div class="box__cta">
-            <a href="https://www.meetup.com/ko-KR/GDG-Seoul/events/240286299/" target="_blank" class="button">Apply</a>
           </div>
         </div>
       </div>
